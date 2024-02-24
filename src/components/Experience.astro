@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Full Stack Developer",
+    company: "Altare",
+    description:
+    "En mi trayectoria profesional, me he especializado en el desarrollo de aplicaciones web, centrándome en la parte del front-end utilizando Angular para crear interfaces dinámicas y atractivas. En cuanto al desarrollo del back-end, he trabajado con Spring Boot, lo que me ha permitido crear aplicaciones robustas y escalables de manera eficiente. He utilizado PostgreSQL 14 como base de datos para almacenar y gestionar datos de forma segura y eficaz. Para el control de versiones, he empleado GIT, garantizando la integridad y la colaboración en el desarrollo del código. En términos de entornos de desarrollo, me he desenvuelto con soltura en Eclipse y Visual Studio Code, maximizando la productividad y la calidad del código. Además, he trabajado bajo la metodología Agile SCRUM, utilizando Jira para la gestión de proyectos, lo que ha facilitado una entrega iterativa y una comunicación efectiva en equipos multidisciplinarios",    link: "https://www.linkedin.com/in/alejandroLopezSanmartino",
+  },
+  {
+    date: "octubre 2021",
+    title: "Full Stack Developer",
+    company: "Max Valley",
+    description:
+    "Mi experiencia se enfoca en el desarrollo completo de aplicaciones web, donde he trabajado en la creación de la capa del front-end utilizando Angular para diseñar interfaces intuitivas y responsivas. En cuanto al back-end, he desarrollado con Java y Maven, utilizando Spring Boot para agilizar el proceso de desarrollo y mejorar la eficiencia del código. He trabajado con bases de datos PostgreSQL para gestionar datos de manera eficiente. Además, cuento con conocimientos en el despliegue de aplicaciones utilizando Apache y Tomcat. He utilizado GIT para el control de versiones, garantizando un seguimiento preciso de los cambios en el código. En cuanto a los entornos de desarrollo, estoy familiarizado con Eclipse y Visual Studio Code, optimizando el proceso de codificación y depuración. También he trabajado bajo la metodología Agile SCRUM, utilizando Jira para la gestión de proyectos, lo que ha permitido una colaboración efectiva y una entrega iterativa de productos de alta calidad",  },
+  {
+    date: "agosto 2017",
+    title: "Gestor",
+    company: "BBVA",
+    description:
+   "Mi experiencia se centró en la coordinación y gestión eficiente de la documentación relacionada con incidencias, así como en la realización de tareas contables para mantener un registro preciso de las transacciones financieras. Además, he tenido la responsabilidad de liderar proyectos, desde su concepción hasta su implementación exitosa. También he desempeñado labores de traducción de documentación, garantizando la precisión y coherencia lingüística. Por último, he llevado a cabo diversas gestiones administrativas utilizando el paquete Office, optimizando el flujo de trabajo y la productividad en el entorno de oficina.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
